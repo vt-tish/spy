@@ -1,5 +1,5 @@
 services:
-  server:
+  spy-server:
     container_name: spy-server
     image: spy-server:latest
     env_file:
@@ -19,7 +19,7 @@ services:
           cpus: "1"
           memory: 1G
 
-  redis:
+  spy-cache:
     image: redis:7.2-alpine
     container_name: spy-cache
     command: [ "redis-server", "--notify-keyspace-events", "Exg" ]
