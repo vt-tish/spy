@@ -19,7 +19,11 @@ auth:
     public:
       url: http://localhost:7777/.well-known/pkcs8_public.json
 
-#client:
-#  web:
-#    application:
-#      url: http://localhost:3000
+client:
+  web:
+    application:
+      url: http://localhost:3000
+
+gemini:
+#  api-key: AIzaSyBz9qdLxDE7N-FpPAXzXuBgY3PSQg5Qs9U
+  api-key: AIzaSyAbQroyLWGxpCsFb7DYVAGbpywYroMVywM
