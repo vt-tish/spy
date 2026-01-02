@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: spy
+      changes:
+        - sqlFile:
+            path: db/migrations/create_table_users__1.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            stripComments: true

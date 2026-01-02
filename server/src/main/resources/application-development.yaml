@@ -1,0 +1,25 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+
+  datasource:
+    url: jdbc:postgresql://spy-database:5432/spy_db
+    username: postgres
+    password: 1111
+
+  liquibase:
+    change-log: classpath:db/changelogs/db.changelog-master.yaml
+    enabled: true
+
+auth:
+  jwks:
+    private:
+      path: classpath:keys/pkcs8_private.json
+    public:
+      url: http://localhost:7777/.well-known/pkcs8_public.json
+
+#client:
+#  web:
+#    application:
+#      url: http://localhost:3000
